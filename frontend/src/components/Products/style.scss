@@ -27,7 +27,33 @@ html{
 }
 
 hr{
-    margin-top:2rem;
     color: rgb(240, 240, 240);
     height: 0.3rem;
+}
+
+.description-product span{
+    font-size: 1.5rem;
+}
+
+.description-product{
+    position:relative;
+    left: 13rem;
+    bottom: 6rem;
+}
+
+.image-product{
+    width: 9rem;
+    margin: 0 2rem;
+}
+
+
+
+@media (max-width: 900px) {
+    .description-product{
+        position:static;
+    }
+
+    hr{
+        margin-top:2rem;
+    }
 }

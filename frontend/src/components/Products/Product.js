@@ -19,14 +19,16 @@ export default class Product extends Component {
         if(product){
             return(
                     <div className="product-item">
-                        <img src={product.picture} alt={"image product" } className="image-product"/>
+                        <img src={product.picture} alt={"image product"} className="image-product"/>
                         <div className="description-product">
-                            <span className="">{"$ " + product.price.amount }</span>
-                            {product.title}
+                            <div>
+                                <span className="">{"$ " + product.price.amount }</span>
+                            </div>
+                            <div className="name-bussines">
+                                {product.title}
+                            </div>
                         </div>
-                        <div className="name-bussines">
-                            {"Aquí no hay nada"}
-                        </div>
+                        
                         <hr></hr>
                     </div>
             )

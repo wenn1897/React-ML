@@ -28,7 +28,7 @@ export default class Products extends Component {
         }
 
         return(
-            <div className="">
+            <div className="container-product-list">
                {productList}
             </div>
         )
