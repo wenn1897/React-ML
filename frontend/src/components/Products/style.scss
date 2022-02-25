@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5; 
+}
+
+.product-container{
+    position: relative;
+    top:4rem;
+}
+
+
+
+.product-item{
+    position: relative;
+    top:4rem;
+    left:10%;
+
+    width: 80%;
+    padding: 1rem;
+    background-color: #fff;
+
+}
+
+hr{
+    margin-top:2rem;
+    color: rgb(240, 240, 240);
+    height: 0.3rem;
+}

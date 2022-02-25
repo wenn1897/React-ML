@@ -1,0 +1,74 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5; 
+}
+
+.container-search {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 4rem;
+    background-color: rgb(251, 255, 37);
+    line-height: 4rem;
+    
+    display: inline-block;
+}
+
+.form-search {
+    width: 90%;
+    max-height: 3rem;
+    line-height: 4rem;
+}
+
+.form-search input {
+    width: 70%;
+    height: 3rem;
+    font-size: 1rem;
+    border: none;
+}
+
+picture{
+    float: left;
+    width: 20%;
+    height:4rem;
+    line-height: 4rem;
+    padding: 0.9rem;
+}
+
+.btn-search{
+    height: 3rem;
+    line-height: 3rem;
+    width:2.5rem;
+    border:none;
+
+    position: relative;
+    bottom:0.04rem;
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    picture{
+        float: left;
+        width: 18%;
+        padding: 0.9rem 0.3rem;
+    }
+
+    .form-search {
+        width: 100%;
+        max-height: 3rem;
+        line-height: 4rem;
+    }
+
+
+}
+

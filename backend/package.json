@@ -1,0 +1,24 @@
+{
+  "name": "react-shop",
+  "version": "1.0.0",
+  "description": "Access to data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [
+    "server",
+    "backend",
+    "api"
+  ],
+  "author": "wenn1897",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.2.0",
+    "nodemon": "^2.0.15"
+  }
+}

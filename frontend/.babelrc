@@ -1,0 +1,9 @@
+{
+    "presets": [
+        "@babel/preset-env", //compila ES5 ES6
+        "@babel/preset-react" //jsx y sintaxys react
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}
