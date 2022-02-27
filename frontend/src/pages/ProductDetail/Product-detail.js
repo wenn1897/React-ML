@@ -36,13 +36,13 @@ export default function ProductDetail() {
                     <div className="image-detail">
                         <img src={item.picture} alt="Imagen del producto" />
                     </div>
-                    <div>
-                        <span>{item.condition}</span>
-                        <h2>{item.title}</h2>
-                        <h1>{"$ " + item.title}</h1>
+                    <div className="detail">
+                        <h3>{item.condition}</h3>
+                        <span>{item.title}</span>
+                        <h1>{"$ " + item.price.amount}</h1>
                         <button>Comprar</button>
                     </div>
-                    <div>
+                    <div className="description">
                         <h2>Descripción del producto</h2>
                         <p>{item.description}</p>
                     </div>

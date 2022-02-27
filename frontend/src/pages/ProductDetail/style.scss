@@ -6,6 +6,7 @@
 
 html{
     font-size: 62.5; 
+    font-family: "Proxima Nova",-apple-system,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 }
 
 .container-detail{
@@ -21,9 +22,84 @@ html{
 
 .image-detail {
     width: 90%;
+    margin: 0 auto;
 }
 
 .image-detail img{
-    width: 40%
+    width: 50%
 }
 
+.detail{
+    position:relative;
+    bottom: 20rem;
+    left: 60%;
+
+    width:40%;
+    padding-left: 1rem;
+}
+
+.detail span {
+    font-size:1.3rem;
+    font-weight: bold;
+}
+
+.detail h3{
+    font-size:0.9rem;
+    font-weight:lighter;
+    margin-bottom: 1rem;
+}
+
+.detail h1{
+    margin:1rem;
+}
+
+.detail button{
+    background-color: #3483fa;
+    width:100%;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    border:none;
+    font-size: 1rem;
+}
+
+.description{
+    position:relative;
+    bottom:14rem;
+
+    font-size:0.9rem;
+    color: #A7ACA9;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.description h2{
+    color: black;
+    margin:0.8rem 0;
+    font-weight:lighter;
+    
+
+}
+
+@media (max-width: 860px) {
+
+    .image-detail img{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .detail{
+        position:static;
+    
+        width:80%;
+        padding-left: 1rem;
+    }
+
+    .description{
+        position:static;
+    
+        font-size:0.9rem;
+        color: #A7ACA9;
+        padding: 2rem;
+        text-align: justify;
+    }
+}
