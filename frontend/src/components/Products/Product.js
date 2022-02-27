@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 
 export default class Product extends Component {
@@ -19,17 +20,18 @@ export default class Product extends Component {
         if(product){
             return(
                     <div className="product-item">
-                        <img src={product.picture} alt={"image product"} className="image-product"/>
-                        <div className="description-product">
-                            <div>
-                                <span className="">{"$ " + product.price.amount }</span>
+                        <Link to={`/description/${product.id}`}>
+                            <img src={product.picture} alt={"image product"} className="image-product"/>
+                            <div className="description-product">
+                                <div>
+                                    <span className="">{"$ " + product.price.amount }</span>
+                                </div>
+                                <div className="name-bussines">
+                                    {product.title}
+                                </div>
                             </div>
-                            <div className="name-bussines">
-                                {product.title}
-                            </div>
-                        </div>
-                        
-                        <hr></hr>
+                            <hr></hr>
+                        </Link>
                     </div>
             )
         }else{

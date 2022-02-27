@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import Products from '../Products/Products';
+import Products from '../../components/Products/Products';
 
 import logo from '../../assets/icons/Logo_ML.png';
 import lupa from '../../assets/img/ic_Search.png';
+
 import './style.scss'
 
 
@@ -50,7 +51,7 @@ export default class Search extends Component {
     render() {
             console.log("renderizando search");
         return(
-            <div>
+            <div className="container">
 
                 <div className="container-search">
                     <picture>

@@ -46,6 +46,15 @@ hr{
     margin: 0 2rem;
 }
 
+.product-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-product-list{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 
 
 @media (max-width: 900px) {

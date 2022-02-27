@@ -1,6 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const { query } = require('express');
+const { id } = require('express');
 const router = express.Router();
 
 var url= 'https://api.mercadolibre.com/';
@@ -58,6 +59,39 @@ function transformData(data){
     }
 
     return obj
+}
+
+router.get('/description/:id', async (req,res) => {
+    const item = await axios.get(`${url}/items/${req.params.id}`);
+    const description = await axios.get(`${url}/items/${req.params.id}/description`);
+
+    const data = transformDescription( item.data,description.data, req.params.id );
+    res.send(data);
+})
+
+function transformDescription(item, description, id) {
+
+    const obj = {
+        author : {
+            name: "Wendy",
+            lastname: "Ayala"
+        },
+        item: {
+            id: item.id,
+            title: item.title,
+            price: {
+                    currency: item.price,
+                    amount: item.price,
+                    decimals: item.price
+            },
+            picture: item.thumbnail,
+            condition: item.condition,
+            free_shipping: item.shipping.free_shipping,
+            sold_quantity: item.sold_quantity,
+            description: description.plain_text
+        }
+    }    
+    return obj;
 }
 
 

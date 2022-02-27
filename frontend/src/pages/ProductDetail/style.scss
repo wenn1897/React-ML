@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5; 
+}
+
+.container-detail{
+    background-color: #fff; 
+    width: 80vw;
+    margin: 0 auto;
+    padding:1rem;
+
+    position: relative;
+    top: 4rem;
+
+}
+
+.image-detail {
+    width: 90%;
+}
+
+.image-detail img{
+    width: 40%
+}
+

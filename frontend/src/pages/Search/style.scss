@@ -9,6 +9,11 @@ html{
     font-size: 62.5; 
 }
 
+.container{
+    background-color: rgb(245, 244, 244);
+    overflow-x: hidden;
+}
+
 .container-search {
     position: sticky;
     top: 0;
