@@ -34,6 +34,7 @@ Una app sencilla para buscar productos de mercado libre.
 				 'https://api.mercadolibre.com/items/MLA1110245153'
 				 - Transformación de datos para response:  TransformDescription()
 - Frontend: En esta sección se encuentran las 3 vistas por medio de las cuales el usuario podrá interactuar con la aplicación.
+		
 		Ejecución:  El frontend debera ejecutarse corriendo el siguiente comando por consola "npm run start" que a su vez ejecutará el comando "webpack-cli serve --open --mode development"
 
 		Archivos:
