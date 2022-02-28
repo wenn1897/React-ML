@@ -32,8 +32,6 @@ export default class Search extends Component {
 
     async handleSearch(){
 
-
-
         if(this.state.keyword){
             const search = await axios.get(`http://localhost:3000/api/items/${this.state.keyword}`);
             this.setState({ results : search, keyword: ''});

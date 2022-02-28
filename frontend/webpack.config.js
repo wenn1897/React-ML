@@ -11,9 +11,6 @@ module.exports = {
     mode:'development',
     resolve: {
         extensions: ['.js', '.jsx'],
-        alias: {
-            '@icons': path.resolve(__dirname, 'src/assets/img')
-        }
     },
     module: {
         rules: [
@@ -54,9 +51,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css'
         })
-    ],
-    /*devServer: {
-        contentBase: path.join(__dirname,'dist'),
-    }*/
+    ]
     
 }

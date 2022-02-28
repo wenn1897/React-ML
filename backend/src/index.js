@@ -21,7 +21,6 @@ app.use(morgan('dev')); //informacion por consola sobre lo que pasa con el servi
 
 
 //Routers
-//app.use(require('../src/routes/search.routes'));
 app.use('/api/items', require('../src/routes/search.routes'));
 
 

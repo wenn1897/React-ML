@@ -1,12 +1,11 @@
 import React, { Component , useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Search from '../Search/Search';
 import './style.scss';
 
 
  async function getInformationProduct(id){
-     console.log("entre a funcion de consum ")
         const data =  await axios.get(`http://localhost:3000/api/items/description/${id}`);
         const item = data.data.item;
 
@@ -14,16 +13,17 @@ import './style.scss';
 
     }
 
+
 export default function ProductDetail() {
     const [item, setItem] = useState()
 
-    const params = useParams();
+    const params = useParams(); 
+    const navigate = useNavigate()
     const itemProd = {}
     
     
     useEffect( async (itemProd)=> {
         itemProd =  await getInformationProduct(params.id);
-        //console.log("item: " + JSON.stringify(itemProd));
         setItem(itemProd);
     }, [])
     
@@ -40,7 +40,7 @@ export default function ProductDetail() {
                         <h3>{item.condition}</h3>
                         <span>{item.title}</span>
                         <h1>{"$ " + item.price.amount}</h1>
-                        <button>Comprar</button>
+                        <button onClick={()=> navigate('/')}>Comprar</button>
                     </div>
                     <div className="description">
                         <h2>Descripción del producto</h2>
@@ -50,7 +50,7 @@ export default function ProductDetail() {
             </div>
         ) 
     }else{
-        return <div>No se obtuvieron los datos del producto</div>
+        return <div className="loading">Loading...</div>
     }   
         
 }  
