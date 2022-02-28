@@ -12,7 +12,7 @@ Una app sencilla para buscar productos de mercado libre.
 
 ##Estructura
 
-- Backend: En esta sección se desarrolla y configura el API que consumira las API's de Mercado libre y obtendra los datos para luego tranformarlos y responder a cualquier llamado.
+- Backend: En esta sección se desarrolla y configura el API que consumira las API's de Mercado libre y obtendra los datos para luego tranformarlos y responder a cualquier llamado (puerto 3000).
 
 		Ejecución: El backend cuenta con nodemon, una libreria que se encarga de vigilar el sistema de archivos y reinicia automáticamente el proceso, para iniciarlo hay que digitar el siguiente comando en consola: "npm start"
 		
@@ -33,7 +33,7 @@ Una app sencilla para buscar productos de mercado libre.
 				 - Consumo de API para obtener detalle del producto (GET): 
 				 'https://api.mercadolibre.com/items/MLA1110245153'
 				 - Transformación de datos para response:  TransformDescription()
-- Frontend: En esta sección se encuentran las 3 vistas por medio de las cuales el usuario podrá interactuar con la aplicación.
+- Frontend: En esta sección se encuentran las 3 vistas por medio de las cuales el usuario podrá interactuar con la aplicación (Puerto 8080).
 		
 		Ejecución:  El frontend debera ejecutarse corriendo el siguiente comando por consola "npm run start" que a su vez ejecutará el comando "webpack-cli serve --open --mode development"
 
