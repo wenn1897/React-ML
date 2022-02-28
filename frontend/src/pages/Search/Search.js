@@ -28,15 +28,15 @@ export default class Search extends Component {
                 keyword: e.target.value,
             })
         }
-        //console.log(this.state.keyword)
     }
 
     async handleSearch(){
-        console.log("consumiendo el api ")
+
+
 
         if(this.state.keyword){
             const search = await axios.get(`http://localhost:3000/api/items/${this.state.keyword}`);
-            this.setState({ results : search});
+            this.setState({ results : search, keyword: ''});
 
             //console.log(JSON.stringify(this.state.results.data));
             this.productRef.current.setState({ data : this.state.results.data})
@@ -49,7 +49,7 @@ export default class Search extends Component {
 
 
     render() {
-            console.log("renderizando search");
+            
         return(
             <div className="container">
 
